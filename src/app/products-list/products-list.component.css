@@ -1,0 +1,10 @@
+body {
+    margin-top: 20px;
+    background: #f8f8f8;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Modern font stack */
+}
+
+.avatar--md .avatar__content img {
+    width: 40px;
+    height: 40px;
+}

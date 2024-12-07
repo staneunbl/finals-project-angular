@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body bg-primary text-white mailbox-widget pb-0">
+          <h2 class="text-white pb-3">Add Product</h2>
+        </div>
+
+        <!-- Form to add product -->
+        <div class="card-body">
+          <form>
+            <div class="row m-3">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="productCategory">Category ID:</label>
+                  <input type="text" class="form-control" id="productCategory" placeholder="Enter category ID" formControlName="category">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="productName">Product Name:</label>
+                  <input type="text" class="form-control" id="productName" placeholder="Enter product name" formControlName="name">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="productCode">Product Code:</label>
+                  <input type="text" class="form-control" id="productCode" placeholder="Enter product code" formControlName="code">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="productDescription">Product Description:</label>
+                  <input type="text" class="form-control" id="productDescription" placeholder="Enter product description" formControlName="description">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="productPrice">Product Price:</label>
+                  <input type="text" class="form-control" id="productPrice" placeholder="Enter product price" formControlName="price">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="productColor">Product Color:</label>
+                  <input type="text" class="form-control" id="productColor" placeholder="Enter product color" formControlName="color">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="productSize">Product Size:</label>
+                  <input type="text" class="form-control" id="productSize" placeholder="Enter product size" formControlName="size">
+                </div>
+              </div>
+            </div>
+            <hr style="margin-top: 1.6rem;">
+            <div class="text-right">
+              <a href="#" class="btn btn-secondary mr-2">Back to Products List</a>
+              <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

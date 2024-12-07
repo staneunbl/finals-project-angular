@@ -1,0 +1,113 @@
+<!--Main Page-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="container" style="margin-top:50px">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="mb-4">
+                <div class="small mb-3">Search</div>
+                <div class="input-group">
+                    <input placeholder="Search for..." type="text" class="form-control">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="small mb-3">Submitted by:</div>
+                <ul class="nav flex-column nav-pills">
+                    <li class="nav-item">
+                        <a href="#" class="d-flex nav-link">
+                            <div class="media">
+                                <div class="mr-3 align-self-center media-left media-middle">
+                                    <div class="avatar-image avatar-image--loaded">
+                                        <div class="avatar avatar--md avatar-image__image">
+                                            <div class="avatar__content"><img
+                                                    src="https://i.pinimg.com/1200x/dd/8b/a9/dd8ba98ba0b06489ac96f76b74fe7fc6.jpg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="mt-0">Shayyanne Marasigan</div><span class="small">IT3A</span>
+                                </div>
+                            </div> <i class="fa fa-fw fa-circle text-success ml-auto align-self-center ml-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="d-flex nav-link">
+                            <div class="media">
+                                <div class="mr-3 align-self-center media-left media-middle">
+                                    <div class="avatar-image avatar-image--loaded">
+                                        <div class="avatar avatar--md avatar-image__image">
+                                            <div class="avatar__content"><img
+                                                    src="https://i.pinimg.com/564x/68/3d/8f/683d8f58c98a715130b1251a9d59d1b9.jpg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="mt-0">Luis Miraran</div><span class="small">IT3A</span>
+                                </div>
+                            </div><i class="fa fa-fw fa-circle text-warning ml-auto align-self-center ml-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-fw fa-plus mr-2"></i>Add New
+                            People</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div class="d-flex flex-column flex-md-row mb-3 mb-md-0">
+                <nav class="mr-auto d-flex align-items-center" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="active breadcrumb-item" aria-current="page"><a href="/"><i
+                                    class="fa fa-home"></i></a></li>
+                        <li class="active breadcrumb-item" aria-current="page">Product List</li>
+                    </ol>
+                </nav>
+                <div role="toolbar" class="btn-toolbar">
+                    <div role="group" class="btn-group">
+                        <a id="tooltipAddNew" class="align-self-center btn btn-primary" [routerLink]="['/add-product']">
+                            <i class="fa-fw fa fa-plus"></i> Add Products
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 Card_custom-card--border_5wJKy card">
+                <div class="table-responsive-xl">
+                    <table class="mb-0 table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Product ID</th>
+                                <th>Product Name</th>
+                                <th>Product Description</th>
+                                <th class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">
+                                    <div>Product ID</div>
+                                </td>
+                                <td class="align-middle">
+                                    <div>Product Name</div>
+                                </td>
+                                <td class="align-middle">
+                                    <div>Product Description</div>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <a href="#" class="btn btn-sm btn-primary" style="margin: 2px;" [routerLink]="['/view-product']"> <i
+                                            class="fa fa-eye"></i> View</a> |
+                                    <a href="#" class="btn btn-sm btn-warning" style="margin: 2px;" [routerLink]="['/edit-product']"><i
+                                            class="fa fa-pencil"></i> Edit</a> |
+                                    <button type="button" class="btn btn-sm btn-danger" style="margin: 2px;"><i
+                                            class="fa fa-trash"></i> Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
